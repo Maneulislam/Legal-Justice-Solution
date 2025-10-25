@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Legal Solution</title>
 
     <!-- 
     Tailwind CSS 
@@ -12,27 +12,23 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-     <script>
-    tailwind = window.tailwind || {};
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            ocean: '#1ca9c9',
-            forest: '#228b22',
-            'dark-3': '#707070'
-          }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        dark3: '#707070',
+                    }
+                }
+            }
         }
-      }
-    };
-  </script>
+    </script>
 
 
     <!-- daisy UI -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome -->
 
@@ -43,13 +39,13 @@
 <body>
     <!-- Header Section -->
 
-    <header>
+    <header class="lg:w-[70%] mx-auto">
 
         <!-- Navbar -->
 
-        <nav>
+        <nav class="my-10">
 
-            <div class="navbar bg-base-100 shadow-sm">
+            <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -69,24 +65,60 @@
 
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <img src="images/logo2.png" alt="">
                 </div>
                 <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1 ">
-                        <li><a>Home <i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
-                        <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                    <ul class="menu menu-horizontal px-1 text-dark3">
+                        <li><a>Home <i class="fa-solid fa-chevron-right opacity-65"></i></a></li>
+                        <li><a>Services <i class="fa-solid fa-chevron-right opacity-65"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-chevron-right opacity-65"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-chevron-right opacity-65"></i></a></li>
+                        <li><a>Contact Us<i class="fa-solid fa-chevron-right opacity-65"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="btn text-white text-lg font-semibold lg:px-6  bg-[#B68C5A] ">Free Consultation</a>
                 </div>
             </div>
 
 
         </nav>
+
+
+
+
+        <!-- Banner Section -->
+
+
+        <section class="mx-2">
+            <div class="hero " style="background-image: url(images/banner.png);">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="py-28 ">
+                        <h1 class="mb-6 text-4xl lg:text-7xl font-extrabold">We Provide Effective <br> Legal Solutions</h1>
+                        <p class="mb-6 text-lg font-[400] text-[#E7E7E7]">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have <br>
+                            suffered alteration in some form, by injected humour.
+                        </p>
+
+
+                        <div class="lg:flex justify-center space-y-5 lg:space-y-0 lg:space-x-16">
+                            <div>
+                                <input type="text" placeholder="Search your services" class="input input-neutral lg:w-[500px]" />
+
+                            </div>
+
+                            <div>
+                                <button class="btn  text-white border-none text-lg font-semibold px-4  bg-[#B68C5A]">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </header>
 
     <!-- Main Content Section -->
